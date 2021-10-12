@@ -1,0 +1,76 @@
+:root {
+  --primary-color: rgba(100, 150, 100, 0.5);
+  --hover-color: rgba(100, 150, 100, 0.7);
+}
+
+* {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  margin: 5%;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  z-index: 99;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  color: black;
+  width: 30%;
+}
+
+header nav ul li a:hover {
+  background-color: var(--hover-color);
+}
+
+header a {
+  text-decoration: none;
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 20px; */
+}
+
+ul {
+  color: sienna;
+}
+
+.hero {
+  /* I discovered this trick at https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url("../images/mtidabase.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 1000px;
+  flex-wrap: wrap;
+}
+
+.about-me {
+  background-color: var(--primary-color);
+  position: start;
+  margin: 5%;
+}
