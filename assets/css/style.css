@@ -1,6 +1,7 @@
+/* General Rules */
 :root {
-  --primary-color: rgba(100, 150, 100, 0.5);
-  --hover-color: rgba(100, 150, 100, 0.7);
+  --primary-color: rgba(70, 186, 70, 0.7);
+  --hover-color: rgba(70, 186, 70, 0.9);
 }
 
 html {
@@ -9,7 +10,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* min-height: 2000px; */
   flex-wrap: wrap;
 }
 
@@ -18,11 +18,9 @@ html {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
+/* General Rules End*/
 
-img {
-  margin: 5%;
-}
-
+/* Header */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -36,19 +34,20 @@ header {
 
 header h1 {
   width: 100%;
+  display: block;
 }
 
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
+  text-align: center;
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  margin: 10px 20px;
   color: black;
-  width: 10%;
+  text-align: center;
 }
 
 header nav ul li a:hover {
@@ -58,19 +57,55 @@ header nav ul li a:hover {
 header a {
   text-decoration: none;
 }
+/* Header End*/
+
+/* About Me */
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  margin: 0;
+  flex: start;
+  width: 40%;
+}
 
 .about-me {
   background-color: var(--primary-color);
-  position: start;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 5%;
 }
 
+h2 {
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* About Me p ??*/
+p {
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 5%;
+}
+/* About Me End */
+
+/*      Projects */
 .projects {
+  margin: 5%;
   background-color: var(--primary-color);
   margin: 5%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+/* Projects End */
 
+/* Contact */
 .contact {
   background-color: var(--primary-color);
   margin: 5%;
 }
+/* Contact */
