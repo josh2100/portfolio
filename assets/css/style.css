@@ -1,7 +1,7 @@
 /* General Rules */
 :root {
-  --primary-color: rgba(70, 186, 70, 0.7);
-  --hover-color: rgba(70, 186, 70, 0.9);
+  --primary-color: rgba(70, 186, 70, 0.9);
+  --hover-color: rgba(70, 186, 70, 1);
 }
 
 html {
@@ -59,19 +59,14 @@ header a {
 }
 /* Header End*/
 
-/* About Me */
-.about-me {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 img {
   margin: 0;
-  flex: start;
   width: 40%;
+  height: 40%;
 }
 
 .about-me {
+  display: flex;
   background-color: var(--primary-color);
   flex-wrap: wrap;
   justify-content: center;
@@ -93,10 +88,8 @@ p {
 }
 /* About Me End */
 
-/*      Projects */
+/* Projects */
 .projects {
-  margin: 5%;
-  background-color: var(--primary-color);
   margin: 5%;
   justify-content: center;
   flex-wrap: wrap;
@@ -109,3 +102,18 @@ p {
   margin: 5%;
 }
 /* Contact */
+
+/* Modular */
+section {
+  display: flex;
+  background-color: var(--primary-color);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+}
+
+.screenshot {
+  margin: 0;
+  width: 40%;
+  height: 40%;
+}
