@@ -5,7 +5,8 @@
 }
 
 html {
-  background: url("../images/mtidabase.jpg") no-repeat center center fixed;
+  background: white;
+  /* url("../images/mtidabase.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +16,7 @@ html {
 
 * {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   box-sizing: border-box;
 }
 /* General Rules End*/
@@ -60,9 +61,9 @@ header a {
 /* Header End*/
 
 img {
-  margin: 0;
-  width: 40%;
-  height: 40%;
+  margin: 0%;
+  width: 20%;
+  height: 20%;
 }
 
 .about-me {
@@ -94,16 +95,13 @@ p {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* Projects End */
 
-/* Contact */
-.contact {
-  background-color: var(--primary-color);
+section p {
+  flex-wrap: wrap;
+  width: 50%;
   margin: 5%;
 }
-/* Contact */
 
-/* Modular */
 section {
   display: flex;
   background-color: var(--primary-color);
@@ -112,8 +110,32 @@ section {
   margin: 5%;
 }
 
+section img {
+  opacity: 0.8;
+  margin: 5% 2%;
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+}
+
+section img:hover {
+  opacity: 1;
+}
+
+section:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .screenshot {
   margin: 0;
   width: 40%;
   height: 40%;
 }
+/* Projects End */
+
+/* Contact */
+.contact {
+  background-color: var(--primary-color);
+  margin: 5%;
+}
+/* Contact */
