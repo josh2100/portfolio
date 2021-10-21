@@ -50,10 +50,12 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  padding: 1% 0 5% 0;
 }
 
 header nav ul li a {
   margin: 10px 20px;
+
   color: black;
   text-align: center;
 }
@@ -87,6 +89,7 @@ header a {
 h2 {
   height: 40px;
   margin: 5% 0;
+  padding: 3% 0 5% 0;
   display: block;
   text-align: center;
   background-color: var(--headings);
@@ -110,14 +113,17 @@ h2 {
 }
 
 .project {
-  /* defaults 45% */
-
-  min-width: 30%;
+  flex: 25rem 1 0;
+  position: relative;
+  margin: 3rem;
+  /* padding-top: 100%; */
+  /* SAVE bottom, test top */
+  /* min-width: 30%;
   min-height: 30%;
   flex: 1;
   margin: 20px;
   color: black;
-  position: relative;
+  position: relative; */
 }
 
 .project img {
@@ -185,7 +191,7 @@ h2 {
 
 /* Contact */
 .contact {
-  margin: 10% 0;
+  margin: 10% 0%;
   background-color: var(--headings);
   display: flex;
   flex-wrap: wrap;
