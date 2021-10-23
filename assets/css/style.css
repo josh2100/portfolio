@@ -14,13 +14,15 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   box-sizing: border-box;
 }
 
-/* section {
-  padding: 60px;
-} */
+a {
+  text-decoration: none;
+  color: black;
+  border-radius: 5%;
+}
 
 img {
   max-width: 100%;
@@ -29,7 +31,6 @@ img {
 p {
   max-width: 100;
 }
-
 /* General Rules End*/
 
 /* Header */
@@ -55,18 +56,13 @@ header nav ul {
 
 header nav ul li a {
   margin: 10px 20px;
-
+  padding: 10px;
   color: black;
   text-align: center;
 }
 
 header nav ul li a:hover {
   background-color: var(--darkblue);
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 /* Header End*/
 
@@ -82,7 +78,7 @@ a {
 }
 
 .about-me p {
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin: 3%;
   background-color: var(--sections);
@@ -90,18 +86,11 @@ a {
 
 h2 {
   height: 40px;
-  /* margin: 5% 0; */
   margin-top: 50px;
-  padding: 3% 0 5% 0;
+  padding: 2% 0 6% 0;
   display: block;
   text-align: center;
   background-color: var(--headings);
-  /* Save bottom, test top */
-  /* background-color: var(--headings);
-  margin: 5% 0;
-  text-align: center;
-  width: 100%;
-  height: 70px; */
 }
 /* About Me End */
 
@@ -119,21 +108,14 @@ h2 {
   flex: 25rem 1 0;
   position: relative;
   margin: 3rem;
-  /* padding-top: 100%; */
-  /* SAVE bottom, test top */
-  /* min-width: 30%;
-  min-height: 30%;
-  flex: 1;
-  margin: 20px;
-  color: black;
-  position: relative; */
 }
 
 .project img {
   width: 100%;
   height: 100%;
   border: 5px solid var(--headings);
-  border-radius: 25px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .project:hover {
@@ -158,19 +140,14 @@ h2 {
   text-align: center;
 }
 
-/* I learned this feature at */
+/* I learned this hover feature at */
 /* https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
 .project:hover .project-bio {
   background: var(--headings);
   visibility: visible;
   opacity: 0.9;
   border: 5px solid var(--darkblue);
-  border-radius: 25px;
-}
-
-.project-bio a {
-  color: black;
-  text-align: center;
+  border-radius: 15px;
 }
 
 .section-title {
@@ -207,7 +184,6 @@ h2 {
 
 /* Media Queries  */
 @media screen and (max-width: 980px) {
-  /* About Me max 980 */
   .about-me {
     display: inline-block;
     background-color: var(--background);
@@ -217,17 +193,12 @@ h2 {
 
   .about-me p {
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
     margin-left: 0;
     margin-bottom: 100px;
     padding: 5%;
     background-color: var(--sections);
-    /* test top, save bottom */
-    /* width: 100%;
-    margin: 0 auto;
-    padding: 10%;
-    background-color: var(--sections); */
   }
 
   .profilepic {
@@ -238,19 +209,34 @@ h2 {
   }
 
   h2 {
-    height: 40px;
+    height: 60px;
     margin-top: 100px;
     margin-bottom: 0px;
-
-    /* margin: 100px 0; */
-    padding: 3% 0 5% 0;
+    padding: 1% 0 1% 0;
     display: block;
     text-align: center;
     background-color: var(--headings);
   }
-  /* About Me max 980 END */
 
-  /* Projects max 980 */
+  .project {
+    flex: 25rem 1 0;
+    position: relative;
+    margin: 3rem;
+  }
+
+  .project img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--headings);
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  .project-bio p {
+    padding: 25px 25px 25px 25px;
+    line-height: 1.3;
+  }
+
   .contact {
     background-color: var(--headings);
     display: flex;
@@ -267,46 +253,51 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    background: var(--background);
-  }
-}
-
-@media screen and (max-width: 575px) {
-  /* .projects {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-} */
-
-  /* 575 max */
   .projects {
-    width: 100%;
-    margin: 5px;
-    /* margin: 1rem; */
+    width: 90%;
+    margin: 20px auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    /* save bottom test top */
-    /* display: flex;
-    flex-flow: column nowrap;
-    align-items: center; */
   }
 
   .project {
-    flex: 2rem 1 0;
-    width: 100%;
-    /* margin: 3rem; */
+    flex: 1 0;
+    width: 90%;
+    margin-right: 50px;
+    margin-left: 50px;
     color: black;
     position: relative;
-    /* save bottom test top */
-    /* flex: 0 auto;
-    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header nav ul li a {
+    margin: 10px 20px;
+    padding: 0px;
     color: black;
-    position: relative; */
+    text-align: center;
+  }
+
+  .projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0;
+  }
+
+  .project {
+    flex: 1 0;
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: black;
+    position: relative;
+    border-radius: 0;
   }
 
   .project-bio {
@@ -315,10 +306,6 @@ h2 {
     padding: 5px;
     line-height: 1.3;
     position: static;
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s, visibility 0.3s;
@@ -330,17 +317,13 @@ h2 {
     opacity: 1;
     border: none;
     border-radius: 0;
-
-    /* background: var(--sections);
-    visibility: visible;
-    opacity: 0.9;
-    border: 5px solid var(--darkblue);
-    border-radius: 25px; */
   }
 
   .project-img {
-    background: var(--sections);
     width: 100%;
+    background: var(--sections);
+    border: none;
+    border-radius: none;
   }
 }
 /* Media Queries End */
