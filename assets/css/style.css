@@ -18,9 +18,9 @@ html {
   box-sizing: border-box;
 }
 
-section {
+/* section {
   padding: 60px;
-}
+} */
 
 img {
   max-width: 100%;
@@ -64,8 +64,9 @@ header nav ul li a:hover {
   background-color: var(--darkblue);
 }
 
-header a {
+a {
   text-decoration: none;
+  color: black;
 }
 /* Header End*/
 
@@ -263,16 +264,6 @@ h2 {
     width: 100%;
     margin: 10px;
   }
-
-  /* .project-bio {
-    position: static;
-    flex: 1;
-    visibility: visible;
-  } */
-
-  /* .project img {
-    flex: 2;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -293,6 +284,8 @@ h2 {
   /* 575 max */
   .projects {
     width: 100%;
+    margin: 5px;
+    /* margin: 1rem; */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -304,9 +297,9 @@ h2 {
   }
 
   .project {
-    flex: 0 auto;
+    flex: 2rem 1 0;
     width: 100%;
-    margin: 0;
+    /* margin: 3rem; */
     color: black;
     position: relative;
     /* save bottom test top */
